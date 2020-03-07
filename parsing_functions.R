@@ -75,7 +75,7 @@ print_section <- function(position_data, section_id){
         ' ',
         map_chr(descriptions, ~paste('-', ., collapse = '\n'))
       )
-    ) %>% 
+    ) %>%
     strip_links_from_cols(c('title', 'description_bullets')) %>% 
     mutate_all(~ifelse(is.na(.), 'N/A', .)) %>% 
     glue_data(
@@ -85,7 +85,7 @@ print_section <- function(position_data, section_id){
       "\n\n",
       "{institution}",
       "\n\n",
-      "{timeline}", 
+      "{timeline}",
       "\n\n",
       "{description_bullets}",
       "\n\n\n",
@@ -95,7 +95,7 @@ print_section <- function(position_data, section_id){
 # Construct a bar chart of skills
 build_skill_bars <- function(skills, out_of = 5){
   bar_color <- "#969696"
-  bar_background <- "#d9d9d9"
+  bar_background <- "#EEEEEE"
   skills %>% 
     mutate(width_percent = round(100*level/out_of)) %>% 
     glue_data(
