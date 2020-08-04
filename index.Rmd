@@ -157,21 +157,21 @@ print_section(position_data, 'industry_positions')
 <!-- <br> -->
 <!-- <br> -->
 
-<!-- Teaching Experience {data-icon=chalkboard-teacher} -->
-<!-- -------------------------------------------------------------------------------- -->
-
-<!-- ```{r} -->
-<!-- print_section(position_data, 'teaching_positions') -->
-<!-- ``` -->
-
-
-
-Data Journalism Effort {data-icon=chart-bar}
+Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'data_science_writings')
+print_section(position_data, 'teaching_positions')
 ```
+
+
+
+<!-- Data Journalism Effort {data-icon=chart-bar} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- print_section(position_data, 'data_science_writings') -->
+<!-- ``` -->
 
 
 Publications {data-icon=book}
